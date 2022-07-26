@@ -1,8 +1,8 @@
 package com.gm.mundopc;
 
 public class DispositivoEntrada {
-    String tipoEntrada;
-    String marca;
+   protected String tipoEntrada;
+   protected String marca;
 
     public DispositivoEntrada(String tipoEntrada, String marca) {
         this.tipoEntrada = tipoEntrada;

@@ -1,17 +1,15 @@
 package com.gm.mundopc;
 
 public class Teclado extends DispositivoEntrada{
-    int idTeclados;
-    int contadorTeclados;
+    private final int idTeclados;
+    private static int contadorTeclados;
     public Teclado(String tipoEntrada, String marca) {
         super(tipoEntrada, marca);
+        this.idTeclados= ++contadorTeclados;
     }
 
     @Override
     public String toString() {
-        return "Teclado{" +
-                "tipoEntrada='" + tipoEntrada + '\'' +
-                ", marca='" + marca + '\'' +
-                '}';
+        return "{ Id Teclado : " +this.idTeclados +" "+ super.toString()+"}";
     }
 }
